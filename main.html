@@ -1,0 +1,788 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Northstreet Restaurant">
+    <meta name="author" content="A.K.">
+
+    <title>MOXIE</title>
+     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_e8lVDN94KiKuVrPFYmAgf");
+            emailjs.send("gmail",{ name: "varsha",notes :"restaurant"});
+        })();
+    </script>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' :'6LcjJKUZAAAAAL-JvJsKLHxkTewid3dLwqSnH4dw'
+        });
+      };
+    </script>
+
+ <style type="text/css">
+        #map {
+           height:300px;
+           width:100%;
+        }
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+
+    <!-- Custom CSS -->  
+    <link rel="stylesheet" href="asset/css/style.css" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="myPage"  data-spy="scroll" data-target=".navbar" data-offset="60">
+  
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">MOXIE BAR AND GRILL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#service">Service</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order Now</a>
+                </li>  
+                
+            </ul>
+        </div>  
+    </nav>
+
+
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div class="header-content-inner">
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-about bg-section" id="about">
+        <div class="container-fluid">
+            <h1 class="container-h1">About</h1>
+            <div class="row">
+                <div class="col-sm-5">
+
+                    <div class="hov-img">
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951746/new/warm_welcome.jpg" alt="Warm welcome" class="hov-img-bottom img-fluid">
+                        <div class="hov-img-top hov-img-slideup">
+                            <div class="hov-img-text">
+                                <h5>Warm welcome</h5>
+                                <p>It had separate tables, a menu, and specialized in soups made with a base of meat and eggs, which were said to be restaurants or, in English "restoratives".</p>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div class="hov-img">
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951746/new/delicious_meals.jpg" alt="Delicious meals" class="hov-img-bottom img-fluid">
+                        <div class="hov-img-top hov-img-slideup">
+                            <div class="hov-img-text">
+                                <h5>Delicious meals</h5>
+                                <p> In about 1765 a new kind of eating establishment, called a "Bouillon", was opened on rue des Poulies, near the Louvre, by a man named Boulanger.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hov-img">
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951746/new/professional_staff.jpg" alt="Professional staff" class="hov-img-bottom img-fluid">
+                        <div class="hov-img-top hov-img-slideup">
+                            <div class="hov-img-text">
+                                <h5>Professional staff</h5>
+                                <p>For centuries Paris had taverns which served food at large common tables, but they were notoriously crowded, noisy, not very clean, and served food of dubious quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="col-sm-7">
+                    <div class="row ">
+                        <div class="restaurant-history slideanim text-center">
+                            <h3 class="section-heading">Moxie</h3>
+                            <p class="about-history first">Moxie's Restaurants LP (doing business as Moxie's Grill & Bar; formerly Moxie's Classic Grill and commonly known as Moxie's) is a Canadian restaurant chain operating in eight provinces. An expansion to the United States started in 2016 with a Dallas, Texas location.
+                            Moxie's began as a small deli and diner in Calgary, Alberta, Canada in 1986, before transforming itself into an upscale premium casual dining restaurant and lounge in 2004. Following recent economic and development booms, Moxie's has begun opening new locations rapidly across Canada with a focus on globally inspired comfort food. 
+                            </p>
+
+                            <button type="button" class="btn more" id="more" data-toggle="collapse" data-target="#demo">More</button>
+                            <div id="demo" class="collapse">  
+                                <p class="about-history"> Moxie's restaurants feature dining rooms and lounges that are open seven days a week. Moxie's has daily drink specials, and patios across the country open throughout the summer.
+
+In December 2006 Moxie's expanded its brand to include CHOP Steakhouse & Bar and opened the first location in Edmonton, Alberta. CHOP has since expanded and has locations in Edmonton, Kelowna, Richmond, Winnipeg, and Calgary, and their first Eastern Canada location was opened in Toronto, Ontario in 2012.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>     
+        </div>
+    </section>
+
+    <section class="bg-menu bg-section" id="menu">
+        <div class="container-fluid">
+            <h1 class="container-h1">Menu</h1>
+            <div class="row">
+                
+                    <!-- Nav pills -->
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#breakfast">Breakfast</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#lunch">Lunch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#dinner">Dinner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#dessert">Dessert</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#salads">Salads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#drinks">Drinks</a>
+                        </li>
+                    </ul>
+                    
+
+                    <!-- Tab panes -->
+                    <div class="tab-content slideanim">
+                        <div id="breakfast" class="tab-pane fade show active">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Fresh Smashed Guacamole<span class="badge pull-right">20 $</span></h4>
+                                          <p class="list-group-item-text">fresh white corn chips & pico de gallo</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Tuna Poke<span class="badge pull-right">40$</span></h4>
+                                          <p class="list-group-item-text">rare ahi tuna, avocado & ginger with roasted nori & wonton crisps</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Calamari<span class="badge pull-right">30 $</span></h4>
+                                          <p class="list-group-item-text">+ tempura prawns, sriracha aioli & sweet chili sauce
+
+15½
+                                          </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Dry Ribs<span class="badge pull-right">30 $</span></h4>
+                                          <p class="list-group-item-text">salt & pepper</p>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Breakfast</h3>
+                                        <img src="https://images.immediate.co.uk/production/volatile/sites/2/2018/08/Peanut-butter-pancakes-78d1366.jpg?quality=90&resize=768%2C574" class="menu-img img-fluid" alt="breakfast-img">
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                        <div id="lunch" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Roasted Tomatoes & Whipped Feta Cheese<span class="badge pull-right">10.90 $</span></h4>
+                                         
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Quick fish cakes<span class="badge pull-right">16.80 $</span></h4>
+                                          <p class="list-group-item-text">skinless cod, pollock fillets, Maris Piper, flour, olive oil, fresh green herbs, chives, mayonnaise, eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Wild rice salad<span class="badge pull-right">15.20 $</span></h4>
+                                          <p class="list-group-item-text">mixed rice, wild and long-grain, mixed nuts, fresh basil, fresh mint, dried apricots, extra virgin olive oil
+                                          </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Chicken milanese with spaghetti<span class="badge pull-right">18.70 $</span></h4>
+                                          <p class="list-group-item-text">cloves of garlic, fresh basil, olive oil, plum tomatoes, skinless free-range chicken breasts, plain flour, free-range eggs, breadcrumbs, Parmesan cheese, dried spaghetti</p>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Lunch</h3>
+                                        <img src="https://www.heartofthecity.co.nz/sites/default/files/pie%20and%20salad%20in%20copy.jpg" class="menu-img img-fluid" alt="brekfast-img">
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div id="dinner" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Chicken Wings<span class="badge pull-right">15.90 €</span></h4>
+                                          <p class="list-group-item-text">served with ranch dip & celery</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Soup & Salad<span class="badge pull-right">16.80 $</span></h4>
+                                          <p class="list-group-item-text">Feature soup + caesar or market salad</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Steak Frites<span class="badge pull-right">30.20 $</span></h4>
+                                          <p class="list-group-item-text">7oz certified angus beef (cab) sirloin, chimichurri, fresh greens, fries
+                                          </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Mushroom Sirloin<span class="badge pull-right">18.70 $</span></h4>
+                                          <p class="list-group-item-text">7oz certified angus beef (cab), madeira cream & sauteed portobello mushrooms. Served with buttered mashed potatoes & fresh vegetables</p>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Dinner</h3>
+                                        <img src="https://www.chatelaine.com/wp-content/uploads/2014/10/crispy-roast-potatoes-carrot-rutabaga-mash-yorkshire-pudding-recipe.jpg" class="menu-img img-fluid" alt="brekfast-img">
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dessert" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">White Chocolate Brownie<span class="badge pull-right">10$</span></h4>
+                                          <p class="list-group-item-text">Dark chocolate sauce, freshed whipped cream & vanilla ice cream</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Bite of Brownie<span class="badge pull-right">11$</span></h4>
+                                         
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Warm Baked Donuts<span class="badge pull-right">11 $</span></h4>
+                                          <p class="list-group-item-text">Mini jelly filled donuts
+                                          </p>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Dessert</h3>
+                                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951905/new/dessert.jpg" class="menu-img img-fluid" alt="brekfast-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="salads" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Market Kale Salad (V)<span class="badge pull-right">15$</span></h4>
+                                          <p class="list-group-item-text">Baby kale & artisan leaves, fresh cut vegetables, grana padano, croutons, avocado, tomato & lemon vinaigrette.</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Vegetarian Power Bowl<span class="badge pull-right">16.80 $</span></h4>
+                                          <p class="list-group-item-text">Marinated tofu, shiitake mushrooms, fresh vegetables, artisan greens, cauliflower rice, spicy mayo & sesame avocado</p>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Salads</h3>
+                                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951906/new/salads.jpg" class="menu-img img-fluid" alt="brekfast-img">
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div id="drinks" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Mango White Claw<span class="badge pull-right">5.90 $</span></h4>
+                                         
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Erdinger (alcohol free)<span class="badge pull-right">6.80 $</span></h4>
+                                          
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Miller Lite<span class="badge pull-right">5.20 $</span></h4>
+                                                                                  
+                                       
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Mango lassi<span class="badge pull-right">3.10 €</span></h4>
+                                          <p class="list-group-item-text">green cardamom pods , optional, ripe mangos, low-fat natural yoghurt, ice cubes, runny honey
+                                          </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Drink</h3>
+                                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951906/new/drink.jpg" class="menu-img img-fluid" alt="brekfast-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>             
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-service bg-section" id="service">
+        <div class="container-fluid text-center">
+            <h1 class="container-h1">Service</h1>
+
+            <div class="row service-round-3 slideanim">
+                <div class="col-sm-4 text-center round">
+                    <div class="service-round b-party">
+                        <i class="fa fa-4x fa fa-birthday-cake sr-icons"></i>
+                    </div>
+                    <h4>Birthday party</h4>
+                    <p>For more information please contact us.</p>
+                </div>
+                <div class="col-sm-4 text-center round">
+                    <div class="service-round wedding">
+                        <i class="fa fa-4x fa fa-heart sr-icons"></i>
+                    </div>    
+                    <h4>Wedding</h4>
+                    <p>For more information please contact us</p>
+                </div>
+                <div class="col-sm-4 text-center round">
+                    <div class="service-round b-dinner">
+                        <i class="fa fa-4x fa fa-suitcase  sr-icons"></i>
+                    </div>
+                    <h4>Business dinner</h4>
+                    <p>For more information please contact us.</p>
+                </div>
+            </div>
+            <a href="#contact" class="btn">Contact us</a>
+        </div>
+    </section>
+
+    
+    
+
+    <section id="gallery" class="bg-gallery no-padding">
+        <div class="container-fluid">
+            <h3>Gallery</h3>
+            <hr class="hr-h3s">
+            <div class="row no-gutter gallery slideanim"> 
+                
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/05/ce/f2/a5/moxie-restaurant.jpg" class="img-fluid
+                        " alt="">     
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952203/new/s2.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0d/09/25/27/mac-n-cheese-to-die-for.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://images.adsttc.com/media/images/5013/c596/28ba/0d39/6300/0f3d/newsletter/stringio.jpg?1414403458" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952203/new/s5.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952203/new/s6.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row more-img">
+
+                    <div class="to-gallery">
+                        <h4>For more pictures visit us on</h4>
+                        <div class="social-networks">
+                            <a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+   
+
+    <section class="bg-testimonials" id="testimonials">
+        <div class="container-fluid">
+            <h3 class="">What people say about us</h3>
+            <hr class="hr-testimonials">
+            <div class="row slideanim">    
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                            <h4>Great  atmosphere in restaurant is friendly, and the
+                            dishes are delicious.</h4>
+                            <h5>Varsha Abhi</h5>
+                      </div>
+
+                      <div class="carousel-item">
+                            <h4>Delicious meals, warm welcome, excellent house keeping.</h4>
+                            <h5>william mathew</h5>
+                      </div>
+                    
+                      <div class="carousel-item">
+                            <h4>Definitely my favourite restaurant, friendly, clean, 
+                            delicious meals.</h4>
+                            <h5>Maria Fernandez</h5>
+                      </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>       
+    </section>
+
+    <section class="bg-contact bg-section" id="contact">
+        <div class="container-fluid">
+            <h1 class="container-h1">Contact us</h1>
+            <div class="row slideanim">
+                <div class="col-md-6 col-sm-6 contact-left">
+                    <div class="left-box">
+                        <address class="contact">
+                            <span class="span-contact">Call:</span>
+                            <br>
+                          
+                            <br> 
+                            <span class="span-contact">Email:</span> 
+                            <br>
+                  
+                            <br>
+                            <span class="span-contact">Visit:</span>  
+                            <br>
+                      
+                          
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 contact-right" >
+                            
+                            <form onsubmit="return sendMail(this);">
+                                 <div class="form-group has-feedback">
+                                    <label class="sr-only">First name:</label>
+                                    <input type="text" name="name" class="form-control" placeholder="First name" required>
+                                    
+                                </div>
+                                 <div class="form-group has-feedback">
+                                    <label class="sr-only">Last name:</label>
+                                    <input type="text" name="surname" class="form-control" placeholder="Last name" required>
+                                    
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <label class="sr-only">Email:</label>
+                                    <input type="email" name="email" class="form-control"  placeholder="Email" required>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" name="comment" for="comment">Comment:</label>
+                                    <textarea class="form-control" rows="5" id="comment" placeholder="Description"></textarea>
+                                </div>
+                                 <div id="html_element"></div>
+                                <div class="contact-buttons pull-left">
+                                    <input type="submit" name="submit" onclick ="popup();" value="Send" />
+
+                                    <input type="reset" value="Reset" />
+                                </div>
+                            </form>
+                </div>
+            </div>
+            <div class="row">
+       
+                <div id="map"> </div>
+
+                <!-- Add Google Maps -->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
+              <script>
+              function initMap() {
+    var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 3,
+        center: {
+            lat: 46.619261,
+            lng: -33.134766
+        }
+    });
+
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    var locations = [
+        { lat: 40.785091, lng: -73.968285 },
+        { lat: 41.084045, lng: -73.874245 },
+        { lat: 40.754932, lng: -73.984016 }
+    ];
+
+    var markers = locations.map(function(location, i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+    });
+
+    var markerCluster = new MarkerCluster(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+}
+              </script>
+            </div>
+            
+        </div>    
+    </section>
+    
+         <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <div class="panel panel-primary" style="border:10px">
+                <div class="panel-heading top-bar">
+                    <div class="col-md-8 col-xs-8">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-comment" style="margin-right:6px;"></span>MOXIE HERE>>>>></h3>
+                    </div>
+                </div>
+
+
+                <div class="panel-body msg_container_base">
+
+                    <div class="row msg_container base_sent">
+                        <div class="col-md-10 col-xs-10">
+                            <div class="messages msg_sent">
+                                <p>Hello Moxie How can i help you??</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <chat_log> . </chat_log>
+                </div>
+
+                <!--CHAT USER BOX-->
+                <div class="panel-footer">
+                    <div class="input-group" id="myForm">
+                        <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here...">
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary btn-sm" id="submit" type="submit">Send</button>
+                         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </span>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">CONGRADULATION////</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <p> Thanks For your feedback Our team will reach you soon...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>        
+
+    <footer class="-bg-footer" id="footer">
+        <div class="container-fluid">
+            <div class="row footer-align">
+                <div class="col-md-4 col-sm-4">
+                    <h5>MOXIE</h5>
+                    <hr class="hr-foot">
+                    <div class="footer-items">
+                        <p class="footer">
+                          Contact Us | F.A.Q. | Privacy Policy | Happy Hour | Group Bookings | Dine In Menu | Careers
+  
+                        </p>
+                        <ul class="social-networks">
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h5>Our contact</h5>
+                    <hr class="hr-foot">
+                    <div class="footer-items">
+                        <address>
+                               CANADA 
+                                <br>
+                                USA
+                                <br>
+                                Australia
+                                <br>
+                                <i class="fa fa-phone address"></i> 354 6544 445
+                                <br>
+                                <i class="fa fa-fax address"></i> +454 656 4545
+                                <br>
+                                 <i class="fa fa-fax address"></i> +454 656 4545
+                                <br>
+                                <i class="fa fa-envelope address"></i> <a href="www.moxie.com">moxie@gmail.com</a>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h5>Open hours</h5>
+                    <hr class="hr-foot">
+                    <div class="footer-items">
+                        <ul>
+                            <li>Mon-Fri: 08:00-22:00</li>
+                            <li>Sat    : 09:00-22:00</li>
+                            <li>Sun    : 09:00-16:00</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a class="to-top" href="#myPage" title="toTop">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </footer>
+
+    <div class="footer-copyright">
+            <p>&copy 2018 Copyright by  <a href="https://github.com/varsha"> https://github.com/varsha</a></p>
+    </div>
+
+
+
+ <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+
+    <script src="asset/js/animation.js"></script>
+
+  
+    
+</body>
+
+</html>
