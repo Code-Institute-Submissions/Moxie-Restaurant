@@ -1,14 +1,14 @@
 # MOXIE BAR AND GRILL
    ## UX ##
-* This website is for travelers who wish to explore Canada.
-* This website gives them an idea about two main categories every traveler wants to know about ie main attractions and food destinations
-* We provide free travel advisory and guidence for those who register in our website and those who want to reach out directly has been provoded with our map location
+* This website is for Users who wish to order food and the services provided.
+* This website gives them an idea about the menu price location and what other services they are provided like indoor party wedding etc.
+* We provide online ordering options so the customers need not wait until the food has been prepared
 ### USER STORIES ###
-* As an admin i wish to give an on stop destination for tourist to Canada.
-* As a user i can register and avail free travel advisory services.
-* As a User i can get information about the places i wish to visit.
-*  As a user i can explore the various food culture and by clicking the link it will redirect to the orginal restaurant page which i can book a table and make prior reservations.
- * As a user i can raise my queries to travel experts.
+* As an admin i wish to give a userfriendly restaurant website.
+* As a user i can see the food menu.
+* As a User i can get information about the services they provided.
+*  As a user i can explore the various location using the google map and if any queries there is an contact form so i can communicate the restaurant authorities.
+ * As a user i can  preorder my food need not have to wait for takeout.
  
  #### WIREFRAMES ####
  ![image](20200622_151808.jpg)
@@ -16,39 +16,41 @@
 ## FEATURES ##
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 ### Existing Features ###
-* Application for website login.
-* Navigation to home page.
-* Navigation to attraction page.
-* Navigation to Restaurant page.
+* Application for homepage.
+* Navigation to menu page.
+* Navigation to services page.
+* Navigation to gallery page.
 * Navigation to Contact page.
-* Redirection link to restaurant webpages.
-* Direction Map.
+* Navigation  link to order webpages.
+* Direction Map using Google Map API.
+* Animation using javascript
 * Provided Contact Us form.
-* Slide show of tourist attractions and brief description about destination.
-* Provide Login form.
+* Provide email facility using Email.js
+* Using Jquery add online order and bt each order it will added to the cart and the no is incremented
 
 ### Features Left to Implement ###
-* Options to provide customer reviews about destinations.
-* New webpage for Accomodation/Hotels information
- * Application form for Accomodation preferences.
-  * Option to provide hotel review
-* New webpage for various travel modes and options including car rental details and public bus timings.
+* Options to provide customer reviews about restaurant.
+* Add table reservation
+* Application fpr home delivery.
+
  
  ## Technologies Used ##
  * **HTML** is used for the creation of webpage.
  * **CSS** is used for website design and Styling.
- * **IFRAME** is used for incorperating location map in the website.
+ * **API** is used for Providing Google Map,Email Rechapche
+  * **Javascript** is used for Animation and popup box when send email
+   * **jquery** is used for online ordering.
  * **Font Awesome** is used for taking icons.
  * **BOOTSRAP 4** to have reusable CSS styling.
  
  ## TESTING ##
  * All the html and css code has been tested in **w3c validator**.
- * Test has been performed to login credential requirement for website login.
  * Test has been done to verify all the href links are working properly.
- * Test was done for slideshow of images on attraction page.
+ * Test was done for animation is working properly.
  * Test has been done if the form is working properly.
- * Test has been done to ensure proper working of website in various devices.
- * Test has been done to ensure proper working of location map.
+ * Test has been done to ensure email is received using email.js.
+ * Test has been done to ensure proper working of location map using Api.
+ * Test has been done to ensure proper working of jquery for online ordering.
  
  ### Project looks and screen sizes ###
  
@@ -58,17 +60,16 @@ In this section, you should go over the different parts of your project, and des
   
 ## Deployment ##
 
-The project was performed  using replit application which includes the various aspects of webpage creation like page development, page designing.After the webpage creation in replit the project  is linked to GitHub using version control.After Linking with Github the project code is connected to GitHub from replit.Finaly the project was deployed to GitHub hosting platform.
+The project was performed  using gitpod application which includes the various aspects of webpage creation like page development, page designing.After the webpage creation in gitpod the project  is pushed to GitHub usingvarious commants like add commit and push .After Linking with Github the project code is connected to GitHub from gitpod.Finaly the project was deployed to GitHub hosting platform.
 
 ## Credits ##
 
 ### Content ###
 
-* The text for attraction section was copied from the Wikipedia article important tourist attractions
-* The text for login section was copied from the Wikipedia article canada.
-
+* The text for index section was copied from moxie website
+* 
 ## Media ##
-* The photos used in this site were obtained from google images related to canada.
+* The photos used in this site were obtained from google images related to restaurants.
 
 ## Acknowledgement ##
-* I received inspiration for this project from various travel websites.
+* I received inspiration for this project from various restaurant page.
