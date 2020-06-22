@@ -11,7 +11,7 @@
  * As a user i can raise my queries to travel experts.
  
  #### WIREFRAMES ####
- ![image](image.jpg)
+ ![image](20200622_151808.jpg)
 
 ## FEATURES ##
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
