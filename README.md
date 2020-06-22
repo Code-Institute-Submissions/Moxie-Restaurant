@@ -1,39 +1,74 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# MOXIE BAR AND GRILL
+   ## UX ##
+* This website is for travelers who wish to explore Canada.
+* This website gives them an idea about two main categories every traveler wants to know about ie main attractions and food destinations
+* We provide free travel advisory and guidence for those who register in our website and those who want to reach out directly has been provoded with our map location
+### USER STORIES ###
+* As an admin i wish to give an on stop destination for tourist to Canada.
+* As a user i can register and avail free travel advisory services.
+* As a User i can get information about the places i wish to visit.
+*  As a user i can explore the various food culture and by clicking the link it will redirect to the orginal restaurant page which i can book a table and make prior reservations.
+ * As a user i can raise my queries to travel experts.
+ 
+ #### WIREFRAMES ####
+ ![image](image.jpg)
 
-Welcome USER_NAME,
+## FEATURES ##
+In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+### Existing Features ###
+* Application for website login.
+* Navigation to home page.
+* Navigation to attraction page.
+* Navigation to Restaurant page.
+* Navigation to Contact page.
+* Redirection link to restaurant webpages.
+* Direction Map.
+* Provided Contact Us form.
+* Slide show of tourist attractions and brief description about destination.
+* Provide Login form.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+### Features Left to Implement ###
+* Options to provide customer reviews about destinations.
+* New webpage for Accomodation/Hotels information
+ * Application form for Accomodation preferences.
+  * Option to provide hotel review
+* New webpage for various travel modes and options including car rental details and public bus timings.
+ 
+ ## Technologies Used ##
+ * **HTML** is used for the creation of webpage.
+ * **CSS** is used for website design and Styling.
+ * **IFRAME** is used for incorperating location map in the website.
+ * **Font Awesome** is used for taking icons.
+ * **BOOTSRAP 4** to have reusable CSS styling.
+ 
+ ## TESTING ##
+ * All the html and css code has been tested in **w3c validator**.
+ * Test has been performed to login credential requirement for website login.
+ * Test has been done to verify all the href links are working properly.
+ * Test was done for slideshow of images on attraction page.
+ * Test has been done if the form is working properly.
+ * Test has been done to ensure proper working of website in various devices.
+ * Test has been done to ensure proper working of location map.
+ 
+ ### Project looks and screen sizes ###
+ 
+* The website is designed with bootstrap hence mobile friendly by default.
+* Different Screen sizes are available for different devices
+  eg: ipad pro: 1024 x 1336
+  
+## Deployment ##
 
-## Gitpod Reminders
+The project was performed  using replit application which includes the various aspects of webpage creation like page development, page designing.After the webpage creation in replit the project  is linked to GitHub using version control.After Linking with Github the project code is connected to GitHub from replit.Finaly the project was deployed to GitHub hosting platform.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Credits ##
 
-`python3 -m http.server`
+### Content ###
 
-A blue button should appear to click: *Make Public*,
+* The text for attraction section was copied from the Wikipedia article important tourist attractions
+* The text for login section was copied from the Wikipedia article canada.
 
-Another blue button should appear to click: *Open Browser*.
+## Media ##
+* The photos used in this site were obtained from google images related to canada.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+## Acknowledgement ##
+* I received inspiration for this project from various travel websites.
